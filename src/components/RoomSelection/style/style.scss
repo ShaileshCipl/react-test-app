@@ -5,10 +5,32 @@
 .RoomSelection{
     background:$white;
     @include border-radius(4px);
-    padding: 15px; 
+    padding:15px 15px 5px; 
+    cursor:pointer; 
     .RoomSelectionLabel{
        color:$gray;
        font-size:$size12;
        margin: 0;
+       outline: none;
+       p{
+           margin:0; 
+       }
+       .Details{
+           .count{
+                font-size: $size26;
+                font-weight: bold;
+                color: $lightblack; 
+           }
+           .RightInfo{
+                display: inline-block;
+                padding:0 0 0 5px;
+                .room{
+                    display:block;
+                    font-weight: bold;
+                    color: $lightblack;
+                    font-size: $size13;
+                } 
+           }
+       }
     }
 }
