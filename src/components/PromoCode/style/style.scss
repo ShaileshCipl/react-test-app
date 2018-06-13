@@ -8,4 +8,22 @@
         color:$white;
         font-size:$size13; 
     }
+    .PromoCodeEnter{
+        .form-group{
+            background: $white;
+            @include border-radius(4px);
+            padding: 8px 15px 8px;
+            margin: 10px 0 15px;
+            label{
+                    font-size: $size12;
+                    line-height: 16px;
+                    color: $gray;
+            }
+            input{
+                border:0;
+                outline:0;
+                padding:0;
+            }
+        }
+    }
 }

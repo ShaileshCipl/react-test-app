@@ -5,7 +5,7 @@ import './global_style';
 import './index.scss';
 import './global_variables.scss';
 import registerServiceWorker from './registerServiceWorker';
-import Banner from './containers/Banner/Banner'; 
+import Banner from './containers/Banner/index'; 
 
 
 ReactDOM.render(<Banner />, document.getElementById('root'));

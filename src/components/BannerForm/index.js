@@ -10,9 +10,10 @@ import SelectStay from './../SelectStay';
 import CardButton from './../CardButton';
 import PromoCode from './../PromoCode';
 import RoomSelection from './../RoomSelection';
+import RangeInput from './../RangeInput';
 
 class BannerForm extends React.Component {
-      constructor(props) {
+  constructor(props) {
     super(props);
     this.state = {
       modal: false
@@ -26,19 +27,20 @@ class BannerForm extends React.Component {
       modal: !this.state.modal
     });
   }
-render() {
-  return (
-     <Card className="BannerForm">
+  render() {
+    return (
+      <Card className="BannerForm">
         <CardBody>
           <CardTitle>Where would you like to stay on Umrah?</CardTitle>
-            <SelectStay />
-            <RoomSelection />
-            <PromoCode />
-            <CardButton />
+          <SelectStay />
+          <RangeInput />
+          <RoomSelection />
+          <PromoCode />
+          <CardButton />
         </CardBody>
       </Card>
-  );
-}
+    );
+  }
 }
 
 BannerForm.propTypes = {

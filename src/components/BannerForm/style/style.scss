@@ -3,12 +3,11 @@
 @import '../../../global_variables.scss';
 
 .BannerForm{
-        height:417px;
         @include border-radius(5px);
         background:$DarkGreen;
        .card-title{
            color:$white;
-           font-size:$size18
+           font-size:$size18;
+           padding:12px 0 0 0;
        }   
-
-    }
+}
