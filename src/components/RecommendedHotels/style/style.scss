@@ -1,0 +1,23 @@
+// style
+
+@import '../../../global_variables.scss';
+
+.RecommendedHotel{
+        height:200px;
+        @include border-radius(5px);
+        position: relative;
+        margin-bottom: 30px;
+        cursor:pointer; 
+        p{
+            font-size:$size16;
+            color:$white;
+            width: 100%;
+            background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 98%,rgba(0,0,0,0.65) 100%);
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            align-items: flex-end;
+            display: flex;
+            padding:60px 150px 10px 10px;
+        }
+    }

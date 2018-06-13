@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+//Fonts
+$font-Montserrat:'Montserrat', sans-serif;
+
+// border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Color
+$white:#fff;
+$DarkGreen:rgba(25, 90, 105, 0.9);
+$gray:#888;
+$lightblack:#2a2a2a;
+$yellowMatalic:#998961;
+$DaskYellow:#82704a;
+$Lightgray:#e9e9e9;
+$DarkWhite:#f1f1f1;
+$Matalic:#efefef;
+
+
+// Font Size
+$size10:10px;
+$size12:12px;
+$size13:13px;
+$size15:15px;
+$size16:16px;
+$size24:24px;
+$size18:18px;

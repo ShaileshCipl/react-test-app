@@ -1,0 +1,14 @@
+// style
+
+@import '../../../global_variables.scss';
+
+.RoomSelection{
+    background:$white;
+    @include border-radius(4px);
+    padding: 15px; 
+    .RoomSelectionLabel{
+       color:$gray;
+       font-size:$size12;
+       margin: 0;
+    }
+}
