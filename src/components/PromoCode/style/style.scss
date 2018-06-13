@@ -1,0 +1,11 @@
+// style
+
+@import '../../../global_variables.scss';
+
+.PromoCode {
+    margin:10px 0;
+    .form-check-label{
+        color:$white;
+        font-size:$size13; 
+    }
+}

@@ -1,0 +1,14 @@
+// style
+
+@import '../../../global_variables.scss';
+
+.BannerForm{
+        height:417px;
+        @include border-radius(5px);
+        background:$DarkGreen;
+       .card-title{
+           color:$white;
+           font-size:$size18
+       }   
+
+    }

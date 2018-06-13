@@ -1,0 +1,15 @@
+// style
+
+@import '../../../global_variables.scss';
+.CardButton{
+    .btn-secondary {
+        background-color: $yellowMatalic;
+        border:0;
+        width: 100%;
+        font-size:$size12;
+        height:46px;
+        &:hover{
+            background-color:$DaskYellow; 
+        }
+    }
+}
