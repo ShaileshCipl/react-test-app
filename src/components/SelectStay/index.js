@@ -12,9 +12,7 @@ class SelectStay extends React.Component {
     constructor() {
         super();
         this.state = {
-
             show: false,
-
         };
     }
 

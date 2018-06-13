@@ -8,13 +8,13 @@ import './style/style.scss';
 
 class RecommendedHotels extends React.Component {
 
-render() {
-  return (
-     <div className="RecommendedHotel">
+  render() {
+    return (
+      <div className="RecommendedHotel">
         <p>Recommended Hotel Makkah</p>
-     </div> 
-  );
-}
+      </div>
+    );
+  }
 }
 RecommendedHotels.propTypes = {
 

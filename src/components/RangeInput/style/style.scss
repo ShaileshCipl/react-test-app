@@ -1,0 +1,49 @@
+// style
+
+@import '../../../global_variables.scss';
+
+.RangeInput{
+    background:$white;
+    @include border-radius(4px);
+    padding:15px 15px 5px;
+    margin:0 0 5px;  
+    cursor:pointer;
+    &.In{
+        display: inline-block;
+        width: 49.7%;
+        height:77px;
+    }
+    &.Out{
+        display: inline-block;
+        width: 49.8%;
+        float:right;
+        height:77px;
+    } 
+    .RangeInputLabel{
+       color:$gray;
+       font-size:$size12;
+       margin: 0;
+       outline: none;
+       p{
+           margin:0; 
+       }
+       .Details{
+           .count{
+                font-size: $size26;
+                font-weight: bold;
+                color: $lightblack; 
+           }
+           .RightInfo{
+                display: inline-block;
+                padding:0 0 0 5px;
+                .room{
+                    display:block;
+                    font-weight: bold;
+                    color: $lightblack;
+                    font-size: $size13;
+                    line-height: 14px;
+                } 
+           }
+       }
+    }
+}

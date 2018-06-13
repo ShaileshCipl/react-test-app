@@ -4,7 +4,8 @@
 *
 */
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, Input, ModalHeader, ModalBody, ModalFooter, FormGroup, Label } from 'reactstrap';
+import CardButton from './../CardButton';
 import './style/style.scss';
 
 class RoomSelection extends React.Component {
@@ -35,14 +36,45 @@ class RoomSelection extends React.Component {
             </span>
           </div>
         </div>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+        <Modal data-backdrop="static" data-keyboard="false" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+          <ModalHeader toggle={this.toggle}>Rooms Selection</ModalHeader>
           <ModalBody>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </ModalBody>
+            <FormGroup className="group">
+              <Label for="Rooms">Rooms</Label>
+              <Input type="select" name="select" id="Rooms">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </Input>
+            </FormGroup>
+            <div className="AddGuest">
+              <p>Room <strong>1</strong></p>
+              <FormGroup className="numberguests">
+                <Label for="No. of guests">No. of guests</Label>
+                <Input type="select" name="select" id="guests">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </Input>
+              </FormGroup>
+              <FormGroup className="Guest">
+                <Label for="Guest">Guest 1</Label>
+                <Input type="select" name="select" id="Guest">
+                  <option>+18</option>
+                  <option>17</option>
+                  <option>16</option>
+                  <option>15</option>
+                  <option>14</option>
+                </Input>
+              </FormGroup>
+            </div>
+          </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            <CardButton />
           </ModalFooter>
         </Modal>
       </div>

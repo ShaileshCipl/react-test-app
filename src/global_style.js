@@ -24,4 +24,8 @@ injectGlobal`
   }
   .RecommendedHotel2{
         background:url(${images.hotelHome3})no-repeat top center/cover;
+  }
+  .modal{
+       background-image:url(${images.modalBg});
+         
   }`;
