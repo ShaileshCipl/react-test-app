@@ -10,20 +10,20 @@ class Banner extends Component {
       <div className="Banner">
         <Container>
           <Row>
-            <Col sm="7">
+            <Col lg="7">
               <BestDeals />
               <div className="BottomContainer">
                 <Row>
-                  <Col sm="6">
+                  <Col lg="6">
                     <RecommendedHotels />
                   </Col>
-                  <Col sm="6">
+                  <Col lg="6">
                     <RecommendedHotels2 />
                   </Col>
                 </Row>
               </div>
             </Col>
-            <Col sm="5">
+            <Col lg="5">
               <BannerForm />
             </Col>
           </Row>
